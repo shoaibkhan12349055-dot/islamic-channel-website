@@ -20,3 +20,19 @@ function lightMode() {
   document.body.style.color = "black";
 }
 </script>
+<h2>Visitors Counter</h2>
+
+<p id="count">0</p>
+
+<button onclick="increaseCount()">
+Increase
+</button>
+
+<script>
+let count = 0;
+
+function increaseCount() {
+  count++;
+  document.getElementById("count").innerHTML = count;
+}
+</script>
